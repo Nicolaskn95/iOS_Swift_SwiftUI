@@ -8,23 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+   @State var diceLeftNumber = 1
+   @State var diceRightNumber = 1
+    
     var body: some View {
         ZStack {
             Image("background")
                 .resizable()
-                .ignoresSafeArea(.all)
-                
+                .edgesIgnoringSafeArea(.all)
             VStack {
                 Image("diceeLogo")
                 Spacer()
                 HStack {
-                    DiceeView(number: 2)
-                    DiceeView(number: 3)
+                    DiceeView(number: diceLeftNumber)
+                    DiceeView(number: diceRightNumber)
                 }
                 .padding(.horizontal)
                 Spacer()
                 Button(action: {
-                    
+                    self.diceLeftNumber = Int.random(in: 1...6)
+                    self.diceRightNumber = Int.random(in: 1...6)
                 }) {
                     Text("Roll")
                         .font(.system(size: 50))
@@ -33,7 +37,6 @@ struct ContentView: View {
                         .padding(.horizontal)
                 }
                 .background(Color.red)
-                
             }
         }
     }
