@@ -11,6 +11,7 @@
 		C140BE9D2A5E57D00085FA6D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C140BE9C2A5E57D00085FA6D /* ContentView.swift */; };
 		C140BE9F2A5E57D20085FA6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C140BE9E2A5E57D20085FA6D /* Assets.xcassets */; };
 		C140BEA22A5E57D20085FA6D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C140BEA12A5E57D20085FA6D /* Preview Assets.xcassets */; };
+		C1B39F532A6B310B00386C74 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B39F522A6B310B00386C74 /* NetworkingManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		C140BE9C2A5E57D00085FA6D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C140BE9E2A5E57D20085FA6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C140BEA12A5E57D20085FA6D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C1B39F522A6B310B00386C74 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		C140BE992A5E57D00085FA6D /* H4X0R */ = {
 			isa = PBXGroup;
 			children = (
+				C1B39F512A6B30E500386C74 /* Models */,
 				C140BE9A2A5E57D00085FA6D /* H4X0RApp.swift */,
 				C140BE9C2A5E57D00085FA6D /* ContentView.swift */,
 				C140BE9E2A5E57D20085FA6D /* Assets.xcassets */,
@@ -65,6 +68,14 @@
 				C140BEA12A5E57D20085FA6D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C1B39F512A6B30E500386C74 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C1B39F522A6B310B00386C74 /* NetworkingManager.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1B39F532A6B310B00386C74 /* NetworkingManager.swift in Sources */,
 				C140BE9D2A5E57D00085FA6D /* ContentView.swift in Sources */,
 				C140BE9B2A5E57D00085FA6D /* H4X0RApp.swift in Sources */,
 			);
